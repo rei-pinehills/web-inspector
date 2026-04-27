@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Inspector</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>🔍 Web Inspector</h1>
+            <p class="subtitle">Analyze HTTP headers and response data</p>
+            <div id="input-area">
+                <input type="text" id="url-input" placeholder="Enter URL (e.g. https://httpbin.org/get)">
+                <button onclick="inspect()">Inspect</button>
+            </div>
+
+            <div id="results" class="hidden">
+                <div class="result-section">
+                    <h2>📡 Request</h2>
+                    <div id="request-info"></div>
+                </div>
+            
+                <div class="result-section">
+                    <h2>📫 Response Headers</h2>
+                    <div id="response-headers"></div>
+                </div>
+
+                <div class="result-section">
+                    <h2>⏱️ Performance</h2>
+                    <div id="performance-info"></div>
+                </div>
+
+                <div class="result-section">
+                    <h2>🍪 Cookies</h2>
+                    <div id="cookie-info"></div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
